@@ -1,0 +1,219 @@
+.container.all {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: transparent; /* Update background color */
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  -webkit-text-stroke: 0.8px #212020; 
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 16px;
+  background-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  -webkit-text-stroke: 0.8px #212020;
+}
+
+.search-container input {
+  flex-grow: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  -webkit-text-stroke: 0.8px #212020;
+}
+
+#city, #state, #country {
+  background-color: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(90px);
+  border: none;
+}
+
+.btn.btn-primary {
+  margin-left: 16px;
+  background-color: transparent;
+  display: flex;
+  margin-left: 0;
+  backdrop-filter: blur(90px);
+  border-radius: 10px;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  -webkit-text-stroke: 0.8px #212020;
+  box-shadow: none;
+  outline: none;
+}
+
+.today-forecast {
+  text-align: center;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  backdrop-filter: blur(60px);
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.next-5days-forecast {
+  text-align: center;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.card.deck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.forecast-card {
+  margin: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  border-color: transparent;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-details-today, .forecast-details {
+  justify-content: center;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-details-today {
+  display: contents;
+  height: 140px;
+  flex-grow: 1;
+  border: 1px solid black;
+  flex-direction: inherit;
+  background-color: transparent;
+}
+
+.weather-details-today p {
+  margin: 1px;
+  text-align: left;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px black;
+  flex-direction: inherit;
+  flex-grow: 1;
+}
+
+.todayTempBold {
+ border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+}
+
+.imgClassIconT {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.forecast-card.square {
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.weather-details .weather-icon, .forecast-card .weather-icon {
+  margin-right: 16px;
+}
+
+.weather-info h3 {
+  margin-top: 0;
+}
+
+.forecast-card h5 {
+  margin-bottom: 4px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.forecast-card p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .today-forecast,
+  .weather-details-today
+  .todayTempBold
+  .todayTempIcon {
+    flex-direction: row;
+  }
+}
+
+.weather-icon, .weather-icon5day {
+  animation: moveLeftRight 3s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+

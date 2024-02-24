@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="text-on-bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+<title>☀Weather App🌤</title>
+</head>
+<body>
+  <div class="container all">
+    <div class="container">
+    <div class="search-container">
+      <input type="text" id="city" placeholder="Search city">
+    </div>
+    <div class="search-container">
+      <input type="text" id="state" placeholder="Search state">
+    </div>
+    <div class="search-container">
+      <input type="text" id="country" placeholder="Search country">
+    </div>
+    <button class="btn btn-primary">Search</button>
+  </div>
+  <div class="weather-container">
+    <h2>Today's forecast</h2>
+    <div class="today-forecast">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="weather-details-today">
+              <p id="city_p">Location</p>
+              <p id="status_p">Status</p>
+              <p id="cityHumidity_p">Humidity</p>
+              <p id="cityWind_p">Wind</p>
+              <p id="cityTemp_p">Temperature</p>
+              <p id="feelsLike">RealFeel</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="weather-details-today ">
+              <div class="todayTempBold d-lg-inline-flex "></div>
+              <div class="todayTempIcon d-lg-inline-flex ">
+                <p class="image"><img src="" class="imgClassIconT"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Next 5 days forecast</h2>
+  <div class="card deck next-5days-forecast">
+    <div class="forecast-details d-flex flex-row">
+      <div class="forecast-card square">
+        <h5 id="day1">day1</h5>
+        <p class="status">Status</p>
+        <p class="image"><img src="" class="imgClass" id="img1"></p>
+        <p class="cityTemp">Temperature</p>
+      </div>
+      <div class="forecast-card square">
+        <h5 id="day2">day2</h5>
+        <p class="status">Status</p>
+        <p class="image"><img src="" class="imgClass" id="img2"></p>
+        <p class="cityTemp">Temperature</p>
+      </div>
+      <div class="forecast-card square">
+        <h5 id="day3">day3</h5>
+        <p class="status">Status</p>
+        <p class="image"><img src="" class="imgClass" id="img3"></p>
+        <p class="cityTemp">Temperature</p>
+      </div>
+      <div class="forecast-card square">
+        <h5 id="day4">day4</h5>
+        <p class="status">Status</p>
+        <p class="image"><img src="" class="imgClass" id="img4"></p>
+        <p class="cityTemp">Temperature</p>
+      </div>
+      <div class="forecast-card square">
+        <h5 id="day5">day5</h5>
+        <p class="status">Status</p>
+        <p class="image"><img src="" class="imgClass" id="img5"></p>
+        <p class="cityTemp">Temperature</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
